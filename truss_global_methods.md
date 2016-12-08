@@ -1,0 +1,2 @@
+# Truss Global Methods
+
