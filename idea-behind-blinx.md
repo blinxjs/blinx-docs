@@ -1,0 +1,4 @@
+# The idea behind blinx
+
+
+

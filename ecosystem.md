@@ -3,15 +3,20 @@
 Blinx has a rich, growing ecosystem that helps you focus on the business needs.
 
 ## Ecosystem
-TBD-Wireframe
+
+Git hub link: [https://github.com/blinxjs/blinxjs](https://github.com/blinxjs/blinxjs)
+
+### [Blinx Generator](https://github.com/blinxjs/generator-blinx)
+
+A cli to generate new Blinx application or create new module.
 
 ### Router
 
-Every Single Page Application (SPA) needs a robust router. Blinx has its own truss-router, which is wrapper over [Router5](router5.github.io). For details, refer to:
+Every Single Page Application \(SPA\) needs a robust router. Blinx has its own blinx-router, which is wrapper over [Router5](router5.github.io). For details, refer to:
 
-- [Router 5](router5.github.io)
-- [Example](http://truss.surge.sh/examples/router-example/index.html#/layout)
-- [Documentation](https://github.com/flipkart-incubator/truss/tree/master/examples/router-example)
+* [Router 5](router5.github.io)
+* [Example](http://truss.surge.sh/examples/router-example/index.html#/layout)
+* [Documentation](https://github.com/flipkart-incubator/truss/tree/master/examples/router-example)
 
 ### Modules
 
@@ -39,17 +44,19 @@ Blinx provides the following independently executable UI modules out-of-the-box:
 * Select Box
 * Wizard
 
+### Providers
+
+Blinx Providers adds/modifies functionality over modules. These are the providers available at the moment:
+
+* Lifecycle Logger
+* Smart Renderer
+* DOM Event Manager
+* Observer
+* Request extension
+
 ### Extensions
 
-Blinx Extensions allow you to add features across modules ([Global Extensions](####Global Extensions)) or to a specific module ([Local Extensions](####Local Extensions)).
-
-#### Global Extensions
-
-* Lifecycle change logger
-* DOM event handler
-* Two-way data binding and redux handler
-
-#### Local Extensions
+Blinx Extensions are the way to use external libraries, it provides abstraction over the 3rd party code. These are the available extensions:
 
 * Accordion
 * Date Picker
@@ -79,5 +86,6 @@ Blinx Extensions allow you to add features across modules ([Global Extensions](#
 * Fullscreen
 * Moment
 * Sortable
+
 
 
