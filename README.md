@@ -1,15 +1,20 @@
 
-* [Getting Started](README.md)
+* [Getting Started]
+  * [What is Blinx](getting-started.md)
+  * [The idea behind Blinx](chapter1.md)
   * [Principles of Blinx](principles.md)
-* [Components of Blinx](chapter1.md)
   * [Blinx Architecture](blinx-methods.md)
+* [Components of Blinx]
+  * [Structure](structure.md)
   * [Modules](modules.md)
   * [Events](events.md)
-  * [Structure](/structure.md)
   * [Providers](providers.md)
   * [Extensions](extensions.md)
-* [Terms of Use and Support](tou.md)
-* [Demo](examples.md)
-* [Hands-On: Counter Application](hands-on-counter-application.md)
-  * [Ecosystem](ecosystem.md)
+* [Its Coding time now!]
+  * [Examples with demo](examples.md)
+  * [Hands-On: Counter Application](hands-on-counter-application.md)
+  * [Terms of Use and Support](tou.md)
+* [Blinx Ecosystem](ecosystem.md)
+* [Contributing to Blinx]()
+
 
