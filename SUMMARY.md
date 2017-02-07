@@ -9,7 +9,8 @@
   * [Events](events.md)
   * [Providers](providers.md)
   * [Extensions](extensions.md)
+* [Its coding time now!](its-coding-time-now!.md)
+* [Hands-On: Counter Application](hands-on-counter-application.md)
 * [Terms of Use and Support](tou.md)
 * [Demo](examples.md)
-* [Hands-On: Counter Application](hands-on-counter-application.md)
 
