@@ -18,7 +18,7 @@ When a module is registered on Blinx, the module functions are invoked at variou
 
 A typical module looks like:
 
-```js
+```javascript
 // Module Template
 {
   config: {
@@ -51,7 +51,7 @@ The following sections deconstruct the components in a Blinx module.
 
 A Blinx module can expose a `config` object containing the details of module children and default placeholders.
 
-```json
+```javascript
 {
   modules: [
     //child module configuration
