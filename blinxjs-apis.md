@@ -80,9 +80,7 @@ Blinx.destroyInstance({
 * Destroy using createIntance configuration
 
 ```
-// Import Blinx object.
 import Blinx from "blinx";
-
 let instanceConf = {
     "moduleName": "MySuperAwesomeModuleInstance",
     "instanceConfig": {
@@ -90,7 +88,6 @@ let instanceConf = {
     },
     "module": MySuperAwesomeModule
 };
-
 let onCreatePromise = Blinx.createInstance(instanceConf);
 
 
