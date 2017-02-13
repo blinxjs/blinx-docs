@@ -2,7 +2,7 @@
 
 Modules are self contained units of Blinx applications that load all functional components and dependencies.
 
-All views and behaviour in a Blinx application page comes from some module. Typically, each section/area on the page is a module. For example, a Header module defines the look and feel and behaviour of the header section of a page. It may consist of a Logo, Title, Username and Password fields, and Login button.
+All views and behaviour in any Blinx application page comes from some module. Typically, each section/area on the page is a module. For example, a Header module defines the look and feel and behaviour of the header section of a page. It may consist of a Logo, Title, Username and Password fields, and Login button.
 
 Blinx manages module lifecycle by invoking predefined functions in a predetermined sequence.
 
