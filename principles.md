@@ -1,14 +1,12 @@
 # Principles of Blinx
 
-#### 
-
-To create any application with blinx, there are some basic principles. These principles allow us to easily create highly extensible, manageable applications without any hassle.
+To create any application with Blinx, there are some basic principles. These principles allow us to easily create highly extensible, manageable applications without any hassle.
 
 #### Make your application modular
 
 The idea is to break down the application into small, reusable and independently testable components. These components do not contain any reference to any other module. This gives us the facility to plug and play any module we need. We can think of our whole application as something like a lego structure.
 
-* **Modules** are the **basic building blocks** of any Blinx-based application. These modules are reusable, self-contained, independently executable and independently testable UI widgets. You
+* **Modules** are the **basic building blocks** of any Blinx-based application. These modules are reusable, self-contained, independently executable and independently testable UI widgets.
 * Every Blinx module should contain their own template and styles.
 * Every element on a Blinx application page comes from a module.
 * There are two types of modules: simple and composite. 
