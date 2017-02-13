@@ -1,7 +1,8 @@
 # Summary
 
+* [BlinxJS](blinxjs.md)
+* [Principles of Blinx](principles.md)
 * [Getting Started](README.md)
-  * [Principles of Blinx](principles.md)
   * [Ecosystem](ecosystem.md)
 * [Components of Blinx](chapter1.md)
   * [Blinx Architecture](blinx-methods.md)
