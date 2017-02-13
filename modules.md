@@ -4,7 +4,122 @@ Modules are self contained units of Blinx applications that load all functional 
 
 All views and behaviour in any Blinx application page comes from some module. Typically, each section/area on the page is a module. For example, a Header module defines the look and feel and behaviour of the header section of a page. It may consist of a Logo, Title, Username and Password fields, and Login button.
 
-Blinx manages module lifecycle by invoking predefined functions in a predetermined sequence.
+Let's rephrase this in a more technical definition. Here it goes
+
+> A Blinx module is an object which defines default configuration, a view, and its behaviour. We can define different methods in modules which will get triggered at different stages of the lifecycle. Also, while creating instances of module Blinx adds properties over it.
+
+Now, let us break this definition and create a module.
+
+_A Blinx module is an object_
+
+```
+let myBlinxModule = {
+
+}
+```
+
+which defines default configuration,
+
+```
+let myBlinxModule = {
+    
+    // define module's default configuration
+    "config": {
+        "modules": [],
+        "placeholders": {
+            "name": {
+                "firstName": "John",
+                "lastName": "Doe"
+            }
+        }
+    }
+}
+```
+
+a view,
+
+```
+let myBlinxModule = {
+    
+    // Removing redundant code for brevity
+    
+    // define module's view
+    // this can be handlebars/underscore or
+    // any template function which accepts data and returns html.
+    template: templateFn
+}
+```
+
+and its behaviour.
+
+```
+let myBlinxModule = {
+    
+    // Removing redundant code for brevity
+    
+    
+    // define behaviour
+    onAnchorClick: function(e){
+        e.stopPropagation();
+    }
+}
+```
+
+We can define different methods in modules which will get triggered at different stages of the lifecycle.
+
+    let myBlinxModule = {
+
+        // Removing redundant code for brevity
+
+        // These (resolveRenderOn, render, onRenderComplete, destory) are the four lifecyle methods
+        // If defined over module, will be triggered by Blinx
+        // at appropriate phase of module's lifecycle
+
+
+        resolveRenderOn: function(){
+            // If this method is defined over module object
+            // This is the first lifecycle method to be triggered by Blinx
+            // Body of this function can contain sync or async code
+            // It is advisable to use this function for module setup / data initialisation / server call to get required data for module.
+
+            // return can be sync like:
+            return {};
+
+            // return can be async promise like:
+            return fetch("path/to/some/api");
+        },
+
+
+        render: function(placeholders){
+            // If this method is defined over module object
+            // This is the second lifecycle method to be triggered by Blinx
+            // after "resolveRenderOn"
+
+            // "render" receives data passed from "resolveRenderOn"
+            // It is advisable to keep this function "SYNC"
+            // This method is meant to create view for the module and stitch it to DOM
+
+            // If this method is not defined, by default Blinx adds it over module.
+            // Which does this
+            const containerSelector = this.getUniqueId();
+            const placeholders = placeholderData || this.instanceConfig.placeholders;
+
+            if (!this.template) return;
+
+            document.querySelector(`#${containerSelector}`).innerHTML = this.template(placeholders);
+        },
+
+
+        onRenderComplete: function(){
+
+        },
+
+        destory: function(){
+
+        }
+    }
+
+## 
 
 ## Lifecycle
 
