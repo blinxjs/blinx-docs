@@ -20,7 +20,7 @@ Every single block below can be called as a module
 
 Create a modifiable "config" file to maintain all reusable components of any module.
 
-We want to reuse our modules as far as possible. For this, every module should be configurable enough to be re used. Blinx allows you to have a separate configuration file for a module. This is very similar to ‘options’ we provide to any Jquery component. For example, you want to create a navigation view, It should be configurable to create a vertical/horizontal navigation or the options provided to the navigation pane are provided via its config.
+We want to reuse our modules as far as possible. For this, every module should be configurable enough to be re used. This is very similar to ‘options’ we provide to any Jquery component. For example, you want to create a navigation view, It should be configurable to create a vertical/horizontal navigation or the options provided to the navigation pane are provided via its config.
 
 In the case of composite modules, all the child modules which it contain can also be a part of configuration. Example you want to create a generic list view which displays a list of items on the screen. Now each item itself can be a module too. and these items are passed to the list view in a config.
 
