@@ -127,7 +127,21 @@ We can define different methods in modules which will get triggered at different
         }
     }
 
-## 
+Also, while creating instances of module Blinx adds properties over it.
+
+```
+// in above "render" lifecycle method,
+// we can see usage of few properties like: getUniqueId, instanceConfig
+// Blinx adds these properties over the module's context while creating 
+
+getUniqueId
+getCSSSelector
+getInstanceConfig
+getModuleContainer
+createChildInstance
+modulePlaceholders
+getAllSubscriptions
+```
 
 ## Lifecycle
 
