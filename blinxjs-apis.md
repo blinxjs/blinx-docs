@@ -16,16 +16,93 @@ _Blinx.createInstance_ method can be used to create an instance of Module and st
 import Blinx from "blinx";
 
 let onCreatePromise = Blinx.createInstance({
-    "moduleName": "MySuperAwesomeModule",
+    "moduleName": "MySuperAwesomeModuleInstance",
     "instanceConfig": {
-        // Configuration for Module Instance
-    }
+        
+        //CSS selector where the rendered view of module instance should be attached.
+        "container": "body",
+        
+        // other configurations for Module Instance
+    },
+    "module": MySuperAwesomeModule
+});
+```
+
+Blinx.createInstance returns a promise which gets resolved once Module instance is created and stitched in DOM. In case it fails to do so, it will reject the promise.
+
+```
+onCreatePromise.then(function(rootModulesArr){
+    
+    // resolve function receives one argument of array type.
+    // rootModulesArr is an array which contains unique ids of independent modules.
+    
+    
+    // Function body
+    // Resolved if created module instance.
+
+}, function(){
+
+    // Function body
+    // Rejected if failed.
+})
+```
+
+Resolve function block receives one argument of type array. This array contains unique ids of independent created module instances and this id can be used to destroy all the created module instances.
+
+## destroyInstance
+
+_Blinx.destroyInstance_ method can be used to destroy the module instance and remove its view from DOM. There are different ways to destroy specific modules.
+
+
+
+* Destroy module instance using unique id returned in createInstance promise
+
+```
+onCreatePromise.then(function(rootModulesArr){
+    
+    rootModulesArr.forEach(function(id){
+        Blinx.destroyInstance(id);
+    });
+
+}, function(){
+
+    // Function body
+    // Rejected if failed.
+})
+```
+
+
+
+* Destroy module instance using moduleName provided while creating instance.
+
+```
+Blinx.destroyInstance({
+    name: "MySuperAwesomeModuleInstance"
 });
 ```
 
 
 
-## destroyInstance
+* Destroy using createIntance configuration
+
+```
+// Import Blinx object.
+import Blinx from "blinx";
+
+let instanceConf = {
+    "moduleName": "MySuperAwesomeModuleInstance",
+    "instanceConfig": {
+        "container": "body"
+    },
+    "module": MySuperAwesomeModule
+};
+
+let onCreatePromise = Blinx.createInstance(instanceConf);
+
+
+// At some later stage of time
+Blinx.destroyInstance(instanceConf);
+```
 
 
 
