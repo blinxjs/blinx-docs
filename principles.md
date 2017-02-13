@@ -1,8 +1,6 @@
 # Principles of Blinx
 
-#### 
-
-To create any application with blinx, there are some basic principles. These principles allow us to easily create highly extensible, manageable applications without any hassle.
+To create any application with Blinx, there are some basic principles. These principles allow us to easily create highly extensible, manageable applications without any hassle.
 
 #### Make your application modular
 
