@@ -22,7 +22,7 @@ which defines default configuration,
 
 ```
 let myBlinxModule = {
-    
+
     // define module's default configuration
     "config": {
         "modules": [],
@@ -40,9 +40,9 @@ a view,
 
 ```
 let myBlinxModule = {
-    
+
     // Removing redundant code for brevity
-    
+
     // define module's view
     // this can be handlebars/underscore or
     // any template function which accepts data and returns html.
@@ -54,10 +54,10 @@ and its behaviour.
 
 ```
 let myBlinxModule = {
-    
+
     // Removing redundant code for brevity
-    
-    
+
+
     // define behaviour
     onAnchorClick: function(e){
         e.stopPropagation();
@@ -111,11 +111,19 @@ We can define different methods in modules which will get triggered at different
 
 
         onRenderComplete: function(){
+            // If this method is defined over module object
+            // This is the third lifecycle method to be triggered by Blinx
+            // after "render"
 
+            // It is advisable to keep this function "SYNC"
+            // This method is meant to add dom events and/or other post render processing.
         },
 
         destory: function(){
+            // If this method is defined over module object
+            // This will get triggered when module is destroyed.
 
+            // This method is meant to do cleanup (if any required)
         }
     }
 
