@@ -131,16 +131,19 @@ Also, while creating instances of module Blinx adds properties over it.
 
 ```
 // in above "render" lifecycle method,
-// we can see usage of few properties like: getUniqueId, instanceConfig
-// Blinx adds these properties over the module's context while creating 
+// we can see usage of few properties like getUniqueId
+// Blinx adds these properties over the module's context while creating
+// which can be accessed over module's context.
 
-getUniqueId
-getCSSSelector
-getInstanceConfig
-getModuleContainer
-createChildInstance
-modulePlaceholders
-getAllSubscriptions
+this.getUniqueId();
+this.getCSSSelector();
+this.getInstanceConfig();
+this.getModuleContainer();
+this.createChildInstance();
+this.modulePlaceholders();
+this.getAllSubscriptions();
+
+// All of these are explained in more detail later.
 ```
 
 ## Lifecycle
