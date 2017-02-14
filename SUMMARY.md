@@ -4,7 +4,7 @@
 * [Principles Of Blinx](principles.md)
 * [BlinxJS APIs](blinxjs-apis.md)
 * [Modules](modules.md)
-* Module Config
+* [Module Config](module-config.md)
 * [Events](events.md)
 * [Providers](providers.md)
 * [Extensions](extensions.md)
