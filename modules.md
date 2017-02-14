@@ -155,8 +155,6 @@ this.getAllSubscriptions();
 
 ## Module Lifecycle Methods
 
-#### 
-
 #### resolveRenderOn
 
 A module can expose a `resolveRenderOn` function, which will be called before rendering the view for module.
@@ -165,27 +163,19 @@ A module can expose a `resolveRenderOn` function, which will be called before re
 
 It is advisable to do all the setup or API calls for module in this phase.
 
-#### 
-
 #### render
 
 The `render` function renders the view of the module and it should be a synchronous function. Any async operation inside this function can impede the sequence of child module rendering.
 
 If the `render` function is not exposed by a module, Blinx automatically creates it and tries to compile the HTML using the exposed template and placeholder using `this.modulePlaceholders`. However, if `resolveRenderOn` function returns a promise, Blinx will compile the HTML using data returned by the promise, and not `this.modulePlaceholders`.
 
-#### 
-
 #### onRenderComplete
 
 `onRenderComplete` function gets called after `render` function execution. This function should be used to bind DOM events or for post-render operations.
 
-#### 
-
 #### destroy
 
 `destroy` function gets called before deleting a module instance. This function should be used to perform clean up tasks.
-
-#### 
 
 #### \_\_onStatusChange
 
