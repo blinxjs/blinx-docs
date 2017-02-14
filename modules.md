@@ -201,41 +201,27 @@ Depending on the phase of the lifecycle, one or more of the following parameters
 * `LIFECYCLE:ON_RENDER_CALLED`
 * `LIFECYCLE:ON_RENDER_CAOMPLETE_CALLED`
 
-
-
 ## Properties added on Module's context by Blinx
-
-#### 
 
 #### getUniqueId
 
 \[Function\] Returns the unique id of the module.
 
-#### 
-
 #### getModuleContainer
 
 \[Function\] Returns the container module element selector.
-
-#### 
 
 #### createChildInstance
 
 \[Function\] This method creates a module with the current module as a parent. So if you have two modules A and B; you need B to be child module of A. From A you can simply call this.createChildInstance\({instance config}\)
 
-
-
 #### modulePlaceholders
 
 \[Function\] This gives the configuration provided to the module. you need to provide in placeholders object in config. The modulePlaceholders variable will take the same placeholder from the config.
 
-#### 
-
 #### getAllSubscriptions
 
 \[Function\] This method returns the array of subscriptions.
-
-
 
 ## Module Structure
 
@@ -255,14 +241,14 @@ let myBlinxModule = {
         },
         "listensTo": []
     },
-    
-    
+
+
     // define module's view
     // this can be handlebars/underscore or
     // any template function which accepts data and returns html.
     template: templateFn,
 
-    
+
     // define behaviour
     onAnchorClick: function(e){
         e.stopPropagation();
@@ -271,17 +257,17 @@ let myBlinxModule = {
     // These (resolveRenderOn, render, onRenderComplete, destory) are the four lifecyle methods
     // If defined over module, will be triggered by Blinx
     // at appropriate phase of module's lifecycle
-    
-    
+
+
     resolveRenderOn: function(){
         // If this method is defined over module object
         // This is the first lifecycle method to be triggered by Blinx
         // Body of this function can contain sync or async code
         // It is advisable to use this function for module setup / data initialisation / server call to get required data for module.
-        
+
         // return can be sync like:
         return {};
-        
+
         // return can be async promise like:
         return fetch("path/to/some/api");
     },
@@ -291,18 +277,18 @@ let myBlinxModule = {
         // If this method is defined over module object
         // This is the second lifecycle method to be triggered by Blinx
         // after "resolveRenderOn"
-        
+
         // "render" receives data passed from "resolveRenderOn"
         // It is advisable to keep this function "SYNC"
         // This method is meant to create view for the module and stitch it to DOM
-        
+
         // If this method is not defined, by default Blinx adds it over module.
         // Which does this
         const containerSelector = this.getUniqueId();
         const placeholders = placeholderData || this.instanceConfig.placeholders;
-        
+
         if (!this.template) return;
-        
+
         document.querySelector(`#${containerSelector}`).innerHTML = this.template(placeholders);
     },
 
@@ -311,17 +297,17 @@ let myBlinxModule = {
         // If this method is defined over module object
         // This is the third lifecycle method to be triggered by Blinx
         // after "render"
-        
+
         // It is advisable to keep this function "SYNC"
         // This method is meant to add dom events and/or other post render processing.
-        
+
         document.querySelector(".some-selector").addEventListener("click", onAnchorClick);
     },
 
     destory: function(){
         // If this method is defined over module object
         // This will get triggered when module is destroyed.
-        
+
         // This method is meant to do cleanup (if any required)
     } 
 }
