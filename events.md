@@ -96,8 +96,6 @@ this.publish(".header", "HEADER_CREATED", {});
 this.publish("HEADER_CREATED", {});
 ```
 
-
-
 #### initOn
 
 initOn is special way to subscribe event which triggers the initialisation of module. If any module config contains initOn subscription, that module will not get initialised unless the event mentioned in initOn is triggered.
@@ -109,5 +107,5 @@ initOn is special way to subscribe event which triggers the initialisation of mo
 }
 ```
 
-
+initOn subscription is by default set to once and can not be modified.
 
