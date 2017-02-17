@@ -29,14 +29,13 @@ In this case the subscribing module will not miss any events and it will occur t
 
 This kind of subscription will listen to the events even when the module has not been rendered. This way any event occurred before the rendering is not missed.
 
-#### 
-
 #### Subscribe Events
 
 A module can subscribe for any event in two ways.
 
-1. Static \(through config\)
-2. Dynamic \(through module\)
+###### Static Subscriptions
+
+###### Dynamic Subscriptions
 
 #### Publish Events
 
