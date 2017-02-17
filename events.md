@@ -36,7 +36,7 @@ A module can subscribe for any event in two ways. To subscribe for any event we 
 * Name of the event to which we want to subscribe.
 * If we need to be specific about the source of event, we should be knowing the css selector of the source module.
 * If we need to subscribe just for once and trash the subscription
-* Which function of the module should be called when the event mentioned is triggered.
+* Which function of the module should be called when the event mentioned is triggered and what should be its context.
 * Subscription behaviour based on type \(mentioned in Events section above\)
 
 ###### Static Subscriptions
@@ -51,6 +51,7 @@ listensTo: [{
     eventPublisher: '#header-container',
     callback: 'addTimestamp', // Method present over module context
     type: "KEEP_ON",
+    context: {}, // Default is module's context
     once: false // true/false
 }]
 ```
@@ -64,7 +65,7 @@ this.subscribe({
     eventName: "ADD_TIMESTAMP",
     eventPublisher: '#header-container',
     callback: function(data){
-    
+
     },
     type: "KEEP_ON",
     once: false // true/false
@@ -73,5 +74,27 @@ this.subscribe({
 
 #### Publish Events
 
-While subscribing to any event, the module can mention three types of subscription to the events.
+Blinx makes publish method available over the module's context and it can be used in any of the two following variants:
+
+```
+// 3 param variant
+/**
+ * Publishes a event
+ * @param subscriber {string}, to override default subscriber
+ * @param eventName {string}
+ * @param data {object}
+*/
+this.publish(".header", "HEADER_CREATED", {});
+
+
+// 2 param variant
+/**
+ * Publishes a event
+ * @param eventName {string}
+ * @param data {object}
+*/
+this.publish("HEADER_CREATED", {});
+```
+
+
 
