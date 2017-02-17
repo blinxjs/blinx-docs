@@ -7,7 +7,8 @@ In any Blinx application, its not recommended to refer any module directly. Comm
 A module can subscribe for any event in two ways.
 
 1. Through Config
-2. 
+2. Through Module
+
 #### Publish Events
 
 While subscribing to any event, the module can mention three types of subscription to the events.
