@@ -1,5 +1,11 @@
 # Events
 
+In any Blinx application, its not recommended to refer any module directly. Communication between modules should be through events only. Events is the primary way for the modules to communicate.
+
+#### Subscribe Events
+
+#### Publish Events
+
 While subscribing to any event, the module can mention three types of subscription to the events.
 
 These are basically three types of events
@@ -28,8 +34,4 @@ In this case the subscribing module will not miss any events and it will occur t
 #### KEEP\_ON
 
 This kind of subscription will listen to the events even when the module has not been rendered. This way any event occurred before the rendering is not missed.
-
-
-
-
 
