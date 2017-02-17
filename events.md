@@ -29,13 +29,28 @@ In this case the subscribing module will not miss any events and it will occur t
 
 This kind of subscription will listen to the events even when the module has not been rendered. This way any event occurred before the rendering is not missed.
 
+#### 
+
 #### Subscribe Events
 
-A module can subscribe for any event in two ways.
+A module can subscribe for any event in two ways. To subscribe for any event we need to have answers of following points:
+
+* Name of the event to which we want to subscribe.
+* If we need to be specific about the source of event, we should be knowing the css selector of the source module.
+* If we need to subscribe just for once and trash the subscription
+* Which function of the module should be called when the event mentioned is triggered.
 
 ###### Static Subscriptions
 
+Static subscription is the way to subscribe for any event through the module configuration. This is best suited when we exactly know the parameters of events which we want to subscribe \(means we have answers of above 4 question\).
+
+
+
+
+
 ###### Dynamic Subscriptions
+
+#### 
 
 #### Publish Events
 
