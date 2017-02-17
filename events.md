@@ -39,14 +39,23 @@ A module can subscribe for any event in two ways. To subscribe for any event we 
 * If we need to be specific about the source of event, we should be knowing the css selector of the source module.
 * If we need to subscribe just for once and trash the subscription
 * Which function of the module should be called when the event mentioned is triggered.
+* Subscription behaviour based on type \(mentioned in Events section above\)
 
 ###### Static Subscriptions
 
 Static subscription is the way to subscribe for any event through the module configuration. This is best suited when we exactly know the parameters of events which we want to subscribe \(means we have answers of above 4 question\).
 
+listensTo is the attribute in config where we can configure the module subscription. Like:
 
-
-
+```
+listensTo: [{
+    eventName: "ADD_TIMESTAMP",
+    eventPublisher: '#header-container',
+    callback: 'addTimestamp', // Method present over module context
+    type: "KEEP_ON",
+    once: false // true/false
+}]
+```
 
 ###### Dynamic Subscriptions
 
