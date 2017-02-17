@@ -10,8 +10,6 @@ Before diving into the usage of events, lets understand the types of events. The
 
 3. `PLAY_AFTER_RENDER`
 
-###### 
-
 ###### PLAY\_AFTER\_RENDER
 
 This event basically works the same way as normal events. If the module view is rendered after the event is published, the module will not listen to those events.
