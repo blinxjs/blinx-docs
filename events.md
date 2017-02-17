@@ -41,7 +41,7 @@ A module can subscribe for any event in two ways. To subscribe for any event we 
 
 ###### Static Subscriptions
 
-Static subscription is the way to subscribe for any event through the module configuration. This is best suited when we exactly know the parameters of events which we want to subscribe \(means we have answers of above 4 question\).
+Static subscription is the way to subscribe for any event through the module configuration. This is best suited when we exactly know the parameters of events which we want to subscribe \(means we have answers of above 5 question\).
 
 listensTo is the attribute in config where we can configure the module subscription. Like:
 
@@ -57,9 +57,19 @@ listensTo: [{
 
 ###### Dynamic Subscriptions
 
+We can subscribe to any events through module's context. Its advisable to use this way of event subscription only if don't have answers of above 5 questions ahead of time.
 
-
-#### 
+```
+this.subscribe({
+    eventName: "ADD_TIMESTAMP",
+    eventPublisher: '#header-container',
+    callback: function(data){
+    
+    },
+    type: "KEEP_ON",
+    once: false // true/false
+})
+```
 
 #### Publish Events
 
