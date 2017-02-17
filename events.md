@@ -98,3 +98,16 @@ this.publish("HEADER_CREATED", {});
 
 
 
+#### initOn
+
+initOn is special way to subscribe event which triggers the initialisation of module. If any module config contains initOn subscription, that module will not get initialised unless the event mentioned in initOn is triggered.
+
+```
+"initOn": {
+    eventName: 'INIT_CONTENT_MODULE',
+    eventPublisher: '#header-container'
+}
+```
+
+
+
