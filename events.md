@@ -4,6 +4,8 @@ In any Blinx application, its not recommended to refer any module directly. Comm
 
 #### Subscribe Events
 
+
+
 #### Publish Events
 
 While subscribing to any event, the module can mention three types of subscription to the events.
