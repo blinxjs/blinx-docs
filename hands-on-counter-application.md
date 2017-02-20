@@ -313,5 +313,93 @@ Default counter configured in this branch is 10.
 
 #### STEP 3
 
+Till now, we have 
+
+* Created a module named counterComposite
+* Passed data to the module through configuration and displayed that data.
+
+In this step, we will see how to create default configuration. Lets create a file named config.js inside counterComposite module.
+
+```
+// src/apps/counter/counterComposite/config.js
+
+export default {
+    "modules": [],
+    "placeholders": {
+        "greeting": "Hi"
+    }
+}
+```
+
+We added greeting in configuration. We need to import this configuration in counterComposite module and export the module's configuration.
+
+```
+// src/apps/counter/counterComposite/index.js
+
+// Add this
+import config from "./config";
+
+// and while exporting export config also like:
+export default {
+    config,
+    resolveRenderOn,
+    render,
+    onRenderComplete
+}
+```
+
+Complete "src/apps/counter/counterComposite/index.js" file should look like:
+
+```
+// src/apps/counter/counterComposite/index.js
+
+import moduleTemplate from "./counter.html";
+import config from "./config";
+
+function resolveRenderOn() {
+
+}
+
+function render() {
+    document.querySelector(this.getModuleContainer()).innerHTML = moduleTemplate(this.getInstanceConfig());
+}
+
+function onRenderComplete() {
+
+}
+
+export default {
+    config,
+    resolveRenderOn,
+    render,
+    onRenderComplete
+}
+```
+
+To display this greeting, lets add a field in view of counterComposite
+
+```
+<!--src/apps/counter/counterComposite/counter.html-->
+
+
+<div>{{initialCount}}</div>
+<div>{{greeting}}</div>
+```
+
+Now, go to the application running on port 8080. You will see counter as 0 and greeting as Hi, where 0 is coming from configuration provided by the module consumer and Hi is from counterComposite default configuration.
+
+Well, now you know
+
+* How to create module and use it
+* How to create and render view.
+* How to use supplied config
+* How to use default config
+
+Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-2".
+
+```
+git checkout step-2
+```
+
 
 
