@@ -118,6 +118,12 @@ import CounterComposite from "./src/apps/counter/counterComposite";
 Now, to make this counterComposite live, we need to create instance of counterComposite.
 
 ```
+// In entry.js, import counter composite along with blinx.
+
+import Blinx from "Blinx";
+import CounterComposite from "./src/apps/counter/counterComposite";
+
+
 Blinx.createInstance({
     "moduleName": "counterComposite",
     "module": CounterComposite,
@@ -128,6 +134,12 @@ Blinx.createInstance({
         }
     }
 });
+```
+
+Now, we have a live working module which does nothing. To see it in action and understand sequences of module method call, lets add few consoles in our counterComposite module.
+
+```
+// src/apps/counter/counterComposite
 ```
 
 
