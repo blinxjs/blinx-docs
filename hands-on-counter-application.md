@@ -220,5 +220,5 @@ export default {
 }
 ```
 
-
+We should be able to find default counter 0 in browser now.
 
