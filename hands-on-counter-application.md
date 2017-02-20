@@ -226,6 +226,14 @@ We should be able to find default counter 0 in browser now.
 
 This default count 0 is hardcoded in out view, which is not as per the philosophy of Blinx. We should be getting all the important data from configuration. Lets add the count in configuration
 
+as
+
+```
+"initialCount": 0
+```
+
+inside placeholders. Complete file should look like:
+
 ```
 // entry.js
 
@@ -243,6 +251,26 @@ Blinx.createInstance({
         }
     }
 });
+```
+
+To accept the property from outside, we need to modify our view i.e "src/apps/counter/counterComposite/counter.html". Change
+
+```
+<div>0</div>
+```
+
+to
+
+```
+<div>{{initialCount}}</div>
+```
+
+. Basically we ask asking our template to show the data available in attribute "initialCount" inside div. Also, we will require to pass on this configuration to template.
+
+```
+moduleTemplate(this.getInstanceConfig());
+// this.getInstanceConfig() provides the configuration for the module.
+// We need to pass this configuration to the view template.
 ```
 
 
