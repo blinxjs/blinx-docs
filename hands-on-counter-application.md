@@ -146,7 +146,7 @@ function resolveRenderOn() {
 }
 
 function render() {
-    console.log("render");
+    console.log("render called");
 }
 
 function onRenderComplete() {
