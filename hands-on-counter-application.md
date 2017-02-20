@@ -150,7 +150,7 @@ function render() {
 }
 
 function onRenderComplete() {
-    console.log("onRenderComplete");
+    console.log("onRenderComplete called");
 }
 
 export default {
