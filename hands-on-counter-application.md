@@ -160,5 +160,15 @@ export default {
 }
 ```
 
+Now, go to the application @ http://localhost:8080/ , open browser console \(Cmd+Opt+J\). It will show the logs in the appropriate sequences \(make sure your server and build job is running\).
+
+Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-1".
+
+```
+git checkout step-1
+```
+
+#### STEP 2
+
 
 
