@@ -142,7 +142,7 @@ Now, we have a live working module which does nothing. To see it in action and u
 // src/apps/counter/counterComposite/index.js
 
 function resolveRenderOn() {
-    console.log("resolveRenderOn");
+    console.log("resolveRenderOn called");
 }
 
 function render() {
@@ -219,8 +219,6 @@ export default {
     onRenderComplete
 }
 ```
-
-
 
 
 
