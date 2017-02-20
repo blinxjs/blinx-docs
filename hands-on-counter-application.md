@@ -446,5 +446,13 @@ This will make call to the API to get the data before rendering view. Now lets m
 {{/each}}
 ```
 
-On opening application in browser, we will see a name and picture of a random person. Just API call and template is required to show data from server, we dont need to bother about sequence of functions or binding data with the view template. Easy.. 
+On opening application in browser, we will see a name and picture of a random person. Just API call and template is required to show data from server, we dont need to bother about sequence of functions or binding data with the view template. Easy..
+
+Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-4".
+
+```
+git checkout step-4
+```
+
+
 
