@@ -199,6 +199,8 @@ document.querySelector(this.getModuleContainer()).innerHTML = moduleTemplate();
 Complete src/apps/counter/counterComposite/index.js should look like:
 
 ```
+// src/apps/counter/counterComposite/index.js
+
 import moduleTemplate from "./counter.html";
 
 function resolveRenderOn() {
@@ -222,5 +224,7 @@ export default {
 
 We should be able to find default counter 0 in browser now.
 
-This default count 0 is hardcoded in out view, which is not as per the philosophy of Blinx. We should be getting all the important data from configuration.
+This default count 0 is hardcoded in out view, which is not as per the philosophy of Blinx. We should be getting all the important data from configuration. Lets add the count in configuration
+
+\`\`\`
 
