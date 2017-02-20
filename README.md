@@ -72,7 +72,6 @@ yo blinx
 * [Module Config](/module-config.md)
 * [Events](/events.md)
 * [Providers](/providers.md)
-* [Extensions](/extensions.md)
 
 Or checkout how a [Blinx Application is structured](/blinx-methods.md) to provide longivity.
 
