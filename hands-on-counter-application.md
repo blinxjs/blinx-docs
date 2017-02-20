@@ -456,33 +456,10 @@ git checkout step-4
 
 #### STEP 5
 
-Lets come back to our counter application features.
+Lets come back to our counter application features and modify the template to hold 
 
-Blinx is a very lightweight library which helps you in structuring the application in scalable manner. Also, it provides you the mechanism to add features over Blinx. There are several extensions/providers by Blinx core team, which we can utilize in writing our application. Lets install blinx-extensions which gives us access to several cool features.
+* the counter data and 
+* two buttons for incrementing and decrementing
 
-```
-npm install blinx-extensions --save
-```
 
-We will be using three providers present inside blinx-extensions:
-
-* observer: To detect change in data and call require function.
-* smart-render: To find the diff between new view and already present view. And change the view smartly in DOM.
-* bind-ext: To help in DOM event binding through configuration.
-
-Lets go to entry.js and add the features of these three providers on Blinx.
-
-```
-// entry.js
-
-import Bind from "blinx-extensions/lib/bind-ext";
-import SmartRender from "blinx-extensions/lib/smart-render";
-import Observer from "blinx-extensions/lib/observer";
-
-Blinx.use(Bind);
-Blinx.use(Observer);
-Blinx.use(SmartRender);
-```
-
-Because of the Observer provider, our modules will have \_ present over the context. Which is basically the object which observes for any change and call the functions provided in configuration.
 
