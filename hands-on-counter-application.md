@@ -273,5 +273,41 @@ moduleTemplate(this.getInstanceConfig());
 // We need to pass this configuration to the view template.
 ```
 
+Complete "src/apps/counter/counterComposite/index.js" file should look like:
+
+```
+// src/apps/counter/counterComposite/index.js
+
+import moduleTemplate from "./counter.html";
+
+function resolveRenderOn() {
+    console.log("resolveRenderOn called");
+}
+
+function render() {
+    document.querySelector(this.getModuleContainer()).innerHTML = moduleTemplate(this.getInstanceConfig());
+}
+
+function onRenderComplete() {
+    console.log("onRenderComplete called");
+}
+
+export default {
+    resolveRenderOn,
+    render,
+    onRenderComplete
+}
+```
+
+Now, when you will check application on http://localhost:8080/, it will still show 0 as count but this is now coming from configuration. Try playing around the configuration and templates.
+
+Note: We are using [handlebars](http://handlebarsjs.com/) templating for this example.
+
+Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-2".
+
+```
+git checkout step-2
+```
+
 
 
