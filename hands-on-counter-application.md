@@ -456,5 +456,5 @@ git checkout step-4
 
 #### STEP 5
 
-
+Lets come back to our counter application features.
 
