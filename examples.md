@@ -29,8 +29,6 @@ type `RE_PLAY`
 
 * [Repo & Documentation](https://github.com/flipkart-incubator/truss/tree/master/examples/listensto-app-replay)
 
-
-
 Module methods \| `resolveRenderOn`, `render`, `destroy`, `onStatusChange`, and `onRenderComplete`
 
 * [Demo](http://truss.surge.sh/examples/resolve-render-&-after-render/index.html)

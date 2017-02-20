@@ -9,7 +9,6 @@
 * [Providers](/providers.md)
 * [Blinx App Structure](/blinx-architecture.md)
 * [Ecosystem](/ecosystem.md)
-* [Routing](routing.md)
 * [101: Counter App ](/hands-on-counter-application.md)
 * [Blinx Features in Examples](/examples.md)
 
