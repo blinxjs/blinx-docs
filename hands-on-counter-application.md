@@ -68,12 +68,23 @@ yo blinx:module
 This will ask several questions to generate required files for the mentioned module.
 
 ```
+yo blinx:module
 ? What type of module you want to create? (Use arrow keys)
 ❯ App specific
   Common
 ```
 
 We need a module for counter application and it will be specific to our sub app. We dont require it for other modules, so will choose "App specific here".
+
+```
+➜  101-tutorial git:(master) ✗ yo blinx:module
+? What type of module you want to create? App specific
+? Where?
+  .gitkeep
+❯ counter
+```
+
+Next question will be about the location where we require to create this module. In our case, we need to create inside counter sub app. Will choose counter.
 
 ```
 
