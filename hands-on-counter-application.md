@@ -313,7 +313,7 @@ Default counter configured in this branch is 10.
 
 #### STEP 3
 
-Till now, we have 
+Till now, we have
 
 * Created a module named counterComposite
 * Passed data to the module through configuration and displayed that data.
@@ -395,10 +395,10 @@ Well, now you know
 * How to use supplied config
 * How to use default config
 
-Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-2".
+Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-3".
 
 ```
-git checkout step-2
+git checkout step-3
 ```
 
 
