@@ -183,10 +183,14 @@ To use this view, we will import it inside "src/apps/counter/counterComposite/in
 ```
 // src/apps/counter/counterComposite/index.js
 
-import moduleTemplate from "./template.html";
+import moduleTemplate from "./counter.html";
 ```
 
+This will compile template.html to the template function and will store it in moduleTemplate. Blinx recommends to use render function of the module to stitch any view in DOM, so lets edit our render function
 
+```
+
+```
 
 
 
