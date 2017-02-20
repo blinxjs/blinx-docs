@@ -140,6 +140,24 @@ Now, we have a live working module which does nothing. To see it in action and u
 
 ```
 // src/apps/counter/counterComposite
+
+function resolveRenderOn() {
+    console.log("resolveRenderOn");
+}
+
+function render() {
+    console.log("render");
+}
+
+function onRenderComplete() {
+    console.log("onRenderComplete");
+}
+
+export default {
+    resolveRenderOn,
+    render,
+    onRenderComplete
+}
 ```
 
 
