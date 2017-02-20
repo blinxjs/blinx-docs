@@ -73,7 +73,7 @@ yo blinx
 * [Events](/events.md)
 * [Providers](/providers.md)
 
-Or checkout how a [Blinx Application is structured](/blinx-methods.md) to provide longivity.
+Or checkout how a [Blinx Application is structured](//blinx-architecture.md) to provide longivity.
 
 Or [try this](/hands-on-counter-application.md) to get you hands dirty.
 
