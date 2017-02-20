@@ -189,8 +189,38 @@ import moduleTemplate from "./counter.html";
 This will compile template.html to the template function and will store it in moduleTemplate. Blinx recommends to use render function of the module to stitch any view in DOM, so lets edit our render function and add the code to stitch view to DOM.
 
 ```
+document.querySelector(this.getModuleContainer()).innerHTML = moduleTemplate();
+
+// this.getModuleContainer() provides the container selector for the module.
+// which we passed while configuring our module in entry.js
+// check "container": "#app-container" in entry.js
+```
+
+Complete src/apps/counter/counterComposite/index.js should look like:
 
 ```
+import moduleTemplate from "./counter.html";
+
+function resolveRenderOn() {
+    console.log("resolveRenderOn called");
+}
+
+function render() {
+    document.querySelector(this.getModuleContainer()).innerHTML = moduleTemplate();
+}
+
+function onRenderComplete() {
+    console.log("onRenderComplete called");
+}
+
+export default {
+    resolveRenderOn,
+    render,
+    onRenderComplete
+}
+```
+
+
 
 
 
