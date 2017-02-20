@@ -425,5 +425,26 @@ In this step, we will have a look on how to handle data from server.
 
 Lets say we want to show the data fetched from some API. In this case, we will use [https://randomuser.me/api/](https://randomuser.me/api/) for tutorial purpose. As recommended by Blinx, we will have the API call inside resolveRenderOn function and will modify the view template to consume the data.
 
+```
+// src/apps/counter/counterComposite/index.js
 
+function resolveRenderOn() {
+    return fetch("//randomuser.me/api/").then((response)=>{
+        return response.json();
+    })
+}
+```
+
+This will make call to the API to get the data before rendering view. Now lets modify view to accomodate data provided by API
+
+```
+<!--src/apps/counter/counterComposite/counter.html-->
+{{#each results}}
+    {{name.title}} {{name.last}}
+    <br/>
+    <img src="{{picture.medium}}">
+{{/each}}
+```
+
+On opening application in browser, we will see a name and picture of a random person. Just API call and template is required to show data from server, we dont need to bother about sequence of functions or binding data with the view template. Easy.. 
 
