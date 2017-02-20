@@ -57,5 +57,5 @@ Once blinx package is fetched and made available for our application, we will im
 import Blinx from "Blinx";
 ```
 
-
+Any Blinx application can be broken down into sub applications, we will be creating a subapp named counter. Lets create a directory named counter inside "src/app".
 
