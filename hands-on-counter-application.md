@@ -515,3 +515,13 @@ export default {
 
 By now, we should be able to understand the importance of different lifecycle methods and when to use that. Blinx community has arrived with a lot of providers which makes life easier. Using some of the providers we can completely remove the logic of binding data to view, event handlers and model from our code. That we will see in next tutorial.
 
+Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-5".
+
+```
+git checkout step-4
+```
+
+#### 
+
+
+
