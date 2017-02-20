@@ -456,10 +456,35 @@ git checkout step-4
 
 #### STEP 5
 
-Lets come back to our counter application features and modify the template to hold 
+Lets come back to our counter application features and modify the template to hold
 
 * the counter data and 
 * two buttons for incrementing and decrementing
+
+```
+<!--src/apps/counter/counterComposite/counter.html-->
+<div>
+    <div class="count">{{initialCount}}</div>
+    <button class="inc" data-type="+">Increment</button>
+    <button class="dec" data-type="-">Decrement</button>
+</div>
+```
+
+And add the event handlers in onRenderComplete function of counterComposite module. Like this:
+
+```
+function onRenderComplete() {
+    document.querySelector(".dec").addEventListener("click", () => {
+        --this.modulePlaceholders.initialCount;
+        document.querySelector(".count").innerHTML = this.modulePlaceholders.initialCount;
+    });
+
+    document.querySelector(".inc").addEventListener("click", () => {
+        ++this.modulePlaceholders.initialCount;
+        document.querySelector(".count").innerHTML = this.modulePlaceholders.initialCount;
+    });
+}
+```
 
 
 
