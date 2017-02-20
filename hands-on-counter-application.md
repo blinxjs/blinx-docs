@@ -178,7 +178,15 @@ In this step we will add view for our own counterComposite. Lets create a html f
 <div>0</div>
 ```
 
-To use this view, we will import it inside 
+To use this view, we will import it inside "src/apps/counter/counterComposite/index.js".
+
+```
+// src/apps/counter/counterComposite/index.js
+
+import moduleTemplate from "./template.html";
+```
+
+
 
 
 
