@@ -226,5 +226,24 @@ We should be able to find default counter 0 in browser now.
 
 This default count 0 is hardcoded in out view, which is not as per the philosophy of Blinx. We should be getting all the important data from configuration. Lets add the count in configuration
 
-\`\`\`
+```
+// entry.js
+
+import Blinx from "Blinx";
+
+import CounterCompositeModule from "./src/apps/counter/counterComposite/index";
+
+Blinx.createInstance({
+    "moduleName": "CounterCompositeModule",
+    "module": CounterCompositeModule,
+    "instanceConfig": {
+        "container": "#app-container",
+        "placeholders": {
+            "initialCount": 0 // Add initial count 0 placeholder
+        }
+    }
+});
+```
+
+
 
