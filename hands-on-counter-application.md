@@ -395,11 +395,29 @@ Well, now you know
 * How to use supplied config
 * How to use default config
 
+Now, its time for some magic. Lets export the template also from counterComposite and remove render function. Basically, counterComposite should look like:
+
+```
+import config from "./config";
+import moduleTemplate from "./counter.html";
+
+export default {
+    config,
+    template: moduleTemplate,
+    resolveRenderOn,
+    onRenderComplete
+}
+```
+
+Check the application on port 8080, its still showing the counter and greeting. Blinx knows what we do generally inside render, so it has made it optional.
+
 Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-3".
 
 ```
 git checkout step-3
 ```
+
+#### 
 
 
 
