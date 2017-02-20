@@ -93,7 +93,7 @@ yo blinx:module
 ? Module Name counterComposite
 ```
 
-Will name our module as counterComposite.
+Will name our module as counterComposite. It will follow up with several question related to requirement of module. For this tutorial, we wont opt for any of these options.
 
 ```
 yo blinx:module
