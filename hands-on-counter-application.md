@@ -222,3 +222,5 @@ export default {
 
 We should be able to find default counter 0 in browser now.
 
+This default count 0 is hardcoded in out view, which is not as per the philosophy of Blinx. We should be getting all the important data from configuration.
+
