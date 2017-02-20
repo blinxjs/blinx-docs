@@ -311,3 +311,7 @@ git checkout step-2
 
 Default counter configured in this branch is 10.
 
+
+
+STEP 3
+
