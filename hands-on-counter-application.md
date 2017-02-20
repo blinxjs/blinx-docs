@@ -299,7 +299,7 @@ export default {
 }
 ```
 
-Now, when you will check application on http://localhost:8080/, it will still show 0 as count but this is now coming from configuration. Try playing around the configuration and templates.
+Now, when you will check application on [http://localhost:8080/](http://localhost:8080/), it will still show 0 as count but this is now coming from configuration. Try playing around the configuration and templates.
 
 Note: We are using [handlebars](http://handlebarsjs.com/) templating for this example.
 
@@ -309,5 +309,5 @@ Thats all for this step. In get the working copy by this stage, you can also che
 git checkout step-2
 ```
 
-
+Default counter configured in this branch is 10.
 
