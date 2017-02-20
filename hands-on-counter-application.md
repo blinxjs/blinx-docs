@@ -456,7 +456,7 @@ git checkout step-4
 
 #### STEP 5
 
-Lets come back to our counter application features. 
+Lets come back to our counter application features.
 
-Blinx is a very lightweight library which helps you in structuring the application in scalable manner. Also, it provides you the mechanism to add features over Blinx. There are several extensions/providers by Blinx core team, which we can utilize in writing our application. 
+Blinx is a very lightweight library which helps you in structuring the application in scalable manner. Also, it provides you the mechanism to add features over Blinx. There are several extensions/providers by Blinx core team, which we can utilize in writing our application. Lets install blinx-extensions which gives us access to several cool features.
 
