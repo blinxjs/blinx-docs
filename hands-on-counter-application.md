@@ -398,6 +398,8 @@ Well, now you know
 Now, its time for some magic. Lets export the template also from counterComposite and remove render function. Basically, counterComposite should look like:
 
 ```
+// src/apps/counter/counterComposite/index.js
+
 import config from "./config";
 import moduleTemplate from "./counter.html";
 
@@ -419,5 +421,7 @@ git checkout step-3
 
 #### STEP 4
 
+In this step, we will have a look on how to handle data from server.
 
+Lets say we want to show the data fetched from some API. In this case, we will use https://randomuser.me/api/ for tutorial purpose.
 
