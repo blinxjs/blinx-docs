@@ -7,6 +7,7 @@ Prerequisite:
 
 ```
 // Once Node and npm is installed, run this command to install generator-blinx
+
 ```
 
 
