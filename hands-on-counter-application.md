@@ -460,3 +460,15 @@ Lets come back to our counter application features.
 
 Blinx is a very lightweight library which helps you in structuring the application in scalable manner. Also, it provides you the mechanism to add features over Blinx. There are several extensions/providers by Blinx core team, which we can utilize in writing our application. Lets install blinx-extensions which gives us access to several cool features.
 
+```
+npm install blinx-extensions --save
+```
+
+We will be using three providers present inside blinx-extensions:
+
+* observer: To detect change in data and call require function.
+* smart-render: To find the diff between new view and already present view. And change the view smartly in DOM.
+* bind-ext: To help in DOM event binding through configuration.
+
+
+
