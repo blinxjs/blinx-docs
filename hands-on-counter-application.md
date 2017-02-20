@@ -470,5 +470,19 @@ We will be using three providers present inside blinx-extensions:
 * smart-render: To find the diff between new view and already present view. And change the view smartly in DOM.
 * bind-ext: To help in DOM event binding through configuration.
 
+Lets go to entry.js and add the features of these three providers on Blinx.
+
+```
+// entry.js
+
+import Bind from "blinx-extensions/lib/bind-ext";
+import SmartRender from "blinx-extensions/lib/smart-render";
+import Observer from "blinx-extensions/lib/observer";
+
+Blinx.use(Bind);
+Blinx.use(Observer);
+Blinx.use(SmartRender);
+```
+
 
 
