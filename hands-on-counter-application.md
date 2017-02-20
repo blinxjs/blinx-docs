@@ -518,7 +518,7 @@ By now, we should be able to understand the importance of different lifecycle me
 Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-5".
 
 ```
-git checkout step-4
+git checkout step-5
 ```
 
 #### 
