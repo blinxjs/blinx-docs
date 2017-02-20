@@ -14,5 +14,3 @@ npm install -g generator-blinx;
 
 
 
-
-
