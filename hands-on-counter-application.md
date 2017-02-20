@@ -186,11 +186,7 @@ To use this view, we will import it inside "src/apps/counter/counterComposite/in
 import moduleTemplate from "./counter.html";
 ```
 
-This will compile template.html to the template function and will store it in moduleTemplate. Blinx recommends to use render function of the module to stitch any view in DOM, so lets edit our render function
-
-```
-
-```
+This will compile template.html to the template function and will store it in moduleTemplate. Blinx recommends to use render function of the module to stitch any view in DOM, so lets edit our render function and add the code to stitch view to DOM
 
 
 
