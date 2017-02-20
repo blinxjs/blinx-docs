@@ -484,5 +484,5 @@ Blinx.use(Observer);
 Blinx.use(SmartRender);
 ```
 
-
+Because of the Observer provider, our modules will have \_ present over the context. Which is basically the object which observes for any change and call the functions provided in configuration.
 
