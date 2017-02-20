@@ -42,13 +42,6 @@ For large scale, long running applications, we have devised the Blinx framework 
 * Empower developers to jump-start application development work with minimal learning curve
 * Reduce patching for framework incompatibilities
 
-### System Requirements
-
-Before working with Blinx ensure that you have the following setup on your system:
-
-* [NodeJS](https://nodejs.org/)
-* [NPM](https://www.npmjs.com/) 
-
 ## Installation
 
 Run the following command to install the latest version of Blinx:
@@ -71,9 +64,7 @@ npm install -g generator-blinx
 yo blinx
 ```
 
-
-
-# To know more about BlinxJS, go through these topics in sequence
+# Documentation
 
 * [Principles Of Blinx](/principles.md)
 * [BlinxJS Core API](/blinxjs-apis.md)
