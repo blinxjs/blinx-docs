@@ -139,7 +139,7 @@ Blinx.createInstance({
 Now, we have a live working module which does nothing. To see it in action and understand sequences of module method call, lets add few consoles in our counterComposite module.
 
 ```
-// src/apps/counter/counterComposite
+// src/apps/counter/counterComposite/index.js
 
 function resolveRenderOn() {
     console.log("resolveRenderOn");
@@ -160,7 +160,7 @@ export default {
 }
 ```
 
-Now, go to the application @ http://localhost:8080/ , open browser console \(Cmd+Opt+J\). It will show the logs in the appropriate sequences \(make sure your server and build job is running\).
+Now, go to the application @ [http://localhost:8080/](http://localhost:8080/) , open browser console \(Cmd+Opt+J\). It will show the logs in the appropriate sequences \(make sure your server and build job is running\).
 
 Thats all for this step. In get the working copy by this stage, you can also checkout to branch named "step-1".
 
@@ -169,6 +169,16 @@ git checkout step-1
 ```
 
 #### STEP 2
+
+In this step we will add view for our own counterComposite. Lets create a html file for view of counterComposite. Create a file named counter.html inside "src/apps/counter/counterComposite". And add a &lt;div&gt; with default count as 0.
+
+```
+<!--src/apps/counter/counterComposite/counter.html-->
+
+<div>0</div>
+```
+
+To use this view, we will import it inside 
 
 
 
