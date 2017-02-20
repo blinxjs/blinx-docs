@@ -106,5 +106,29 @@ yo blinx:module
 ? Would you like to BLinx to take care of rendering? No
 ```
 
+Now, lets import this newly created module in our entry.js file to use it.
+
+```
+// In entry.js, import counter composite along with blinx.
+
+import Blinx from "Blinx";
+import CounterComposite from "./src/apps/counter/counterComposite";
+```
+
+Now, to make this counterComposite live, we need to create instance of counterComposite.
+
+```
+Blinx.createInstance({
+    "moduleName": "counterComposite",
+    "module": CounterComposite,
+    "instanceConfig": {
+        "container": "#app-container",
+        "placeholders": {
+
+        }
+    }
+});
+```
+
 
 
