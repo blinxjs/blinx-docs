@@ -1,6 +1,7 @@
 # Summary
 
 * [BlinxJS](blinxjs.md)
+* [Getting Started](README.md)
 * [Principles Of Blinx](principles.md)
 * [BlinxJS APIs](blinxjs-apis.md)
 * [Modules](modules.md)
@@ -10,8 +11,6 @@
 * [Extensions](extensions.md)
 * [Blinx App Architecture](blinx-methods.md)
 * [Hands-On: Counter Application](hands-on-counter-application.md)
-* Blinx Router: Getting Started
-* [Ecosystem](ecosystem.md)
+* [Blinx Router: Getting Started](blinx-router-getting-started.md)
 * [Getting Started](README.md)
-* [Terms of Use and Support](tou.md)
 

@@ -1,20 +1,16 @@
+* # BlinxJS
 
-* Getting Started
-  * [What is Blinx](getting-started.md)
-  * [The idea behind Blinx](chapter1.md)
-  * [Principles of Blinx](principles.md)
-  * [Blinx Architecture](blinx-methods.md)
-* Components of Blinx
-  * [Structure](structure.md)
-  * [Modules](modules.md)
-  * [Events](events.md)
-  * [Providers](providers.md)
-  * [Extensions](extensions.md)
-* Its Coding time now!
-  * [Examples with demo](examples.md)
-  * [Hands-On: Counter Application](hands-on-counter-application.md)
-  * [Terms of Use and Support](tou.md)
-* [Blinx Ecosystem](ecosystem.md)
-* [Contributing to Blinx]()
+  A lightweight frontend utility belt to write highly scalable single page applications. To know more about BlinxJS, go through these topics in sequence
+
+  * [Principles Of Blinx](/principles.md)
+  * [BlinxJS Core API](/blinxjs-apis.md)
+  * [Modules](/modules.md)
+  * [Module Config](/module-config.md)
+  * [Events](/events.md)
+  * [Providers](/providers.md)
+  * [Extensions](/extensions.md)
+
+  Or checkout how a [Blinx Application is structured](/blinx-methods.md) to provide longivity.
+
 
 
