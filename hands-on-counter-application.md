@@ -429,7 +429,7 @@ Lets say we want to show the data fetched from some API. In this case, we will u
 // src/apps/counter/counterComposite/index.js
 
 function resolveRenderOn() {
-    return fetch("//randomuser.me/api/").then((response)=>{
+    return fetch("https://randomuser.me/api/").then((response)=>{
         return response.json();
     })
 }
