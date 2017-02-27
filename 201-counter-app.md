@@ -91,5 +91,54 @@ Blinx.createInstance({
 });
 ```
 
-Now, come to counterComposite/index.js, we have to use smart render and observer to make operations easier. 
+Now, come to counterComposite/index.js, we have to use smart render and observer to make operations easier. Lets initialise the initialCount in resolveRenderOn
+
+```
+function resolveRenderOn(){
+    this._.initialCount = this.modulePlaceholders.initialCount;
+} 
+```
+
+also, lets create a function to update the count
+
+```
+function updateCount(op) {
+  if(op === "+"){
+    ++this._.initialCount;
+  } else {
+    ++this._.initialCount;
+  }
+}
+```
+
+So complete counterComposite should look like:
+
+```
+// src/apps/counter/counterComposite/index.js
+
+import config from "./config";
+import moduleTemplate from "./counter.html";
+
+function resolveRenderOn(){
+    this._.initialCount = this.modulePlaceholders.initialCount;
+}
+
+function updateCount(op) {
+  if(op === "+"){
+    ++this._.initialCount;
+  } else {
+    ++this._.initialCount;
+  }
+}
+
+export default {
+    resolveRenderOn,
+    config,
+    template: moduleTemplate,
+    updateCount,
+    observe_For: ["render"]
+}
+```
+
+
 
