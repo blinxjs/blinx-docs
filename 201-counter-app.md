@@ -28,7 +28,7 @@ moduleObj = Object.assign\(moduleObj, providerObj\)
 
 ---
 
-Let us get back to counter application now. We will be using 3 providers in this application namely:
+Let us get back to counter application now and make sure you are using latest version of Blinx\(0.9.73 at time of writing this\). We will be using 3 providers in this application namely:
 
 1. bind-ext: To bind events using module configuration.
 
@@ -91,5 +91,5 @@ Blinx.createInstance({
 });
 ```
 
-Now, come to counterComposite/index.js
+Now, come to counterComposite/index.js, we have to use smart render and observer to make operations easier. 
 
