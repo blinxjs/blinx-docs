@@ -172,5 +172,5 @@ If you will observe updateCount method, there we are checking for op.type and op
 </div>
 ```
 
-
+Now, try on the browser. Increment and decrement button should be working properly.
 
