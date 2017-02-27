@@ -127,7 +127,7 @@ function updateCount(op) {
   if(op === "+"){
     ++this._.initialCount;
   } else {
-    ++this._.initialCount;
+    --this._.initialCount;
   }
 }
 
@@ -141,4 +141,15 @@ export default {
 ```
 
 If you will check the view, you will find counter initialised and two button for incrementing and decrementing this counter. But these buttons wont work as we haven't bound any event listeners.
+
+We will be using bind-ext to bind events through config. Let us got to counterComposite/config.js and add event listeners:
+
+```
+{
+    ...
+    
+}
+```
+
+
 
