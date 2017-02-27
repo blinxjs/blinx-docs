@@ -164,6 +164,7 @@ Here, we are binding click event on selector "button" and asking to call our cal
 If you will observe updateCount method, there we are checking for op.type and operating based on the value. Let us change the template to have data-type attribute
 
 ```
+<!-- src/apps/counter/counterComposite/counter.html -->
 <div>
     <div class="count">{{initialCount}}</div>
     <button class="inc" data-type="+">Increment</button>
