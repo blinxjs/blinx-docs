@@ -67,7 +67,6 @@ Now, entry.js should look like:
 ```
 // entry.js
 
-
 import Blinx from "Blinx";
 
 import eventBind from "blinx-extensions/lib/bind-ext";
