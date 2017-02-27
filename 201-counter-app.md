@@ -140,5 +140,5 @@ export default {
 }
 ```
 
-
+If you will check the view, you will find counter initialised and two button for incrementing and decrementing this counter. But these buttons wont work as we haven't bound any event listeners.
 
