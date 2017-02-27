@@ -91,5 +91,5 @@ Blinx.createInstance({
 });
 ```
 
-
+Now, come to counterComposite.index.js
 
