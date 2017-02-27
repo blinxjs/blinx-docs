@@ -147,7 +147,15 @@ We will be using bind-ext to bind events through config. Let us got to counterCo
 ```
 {
     ...
-    
+    domEvents: {
+      click: [{
+        selectors: ["button"],
+        extract: {
+          type: "getData#type"
+        },
+        callback: "updateCount"
+      }]
+    }
 }
 ```
 
