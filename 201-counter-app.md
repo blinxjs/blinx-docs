@@ -42,7 +42,56 @@ Get started and import these packages in our counter application. First we will 
 npm install blinx-extensions --save
 ```
 
+Once installed in project directory we need to import in our project like:
 
+```
+// entry.js
+
+import eventBind from "blinx-extensions/lib/bind-ext";
+import smartRender from "blinx-extensions/lib/smart-render";
+import observer from "blinx-extensions/lib/observer";
+```
+
+and also start using it
+
+```
+// entry.js
+
+Blinx.use(eventBind);
+Blinx.use(smartRender);
+Blinx.use(observer);
+```
+
+Now, entry.js should look like:
+
+```
+// entry.js
+
+
+import Blinx from "Blinx";
+
+import eventBind from "blinx-extensions/lib/bind-ext";
+import smartRender from "blinx-extensions/lib/smart-render";
+import observer from "blinx-extensions/lib/observer";
+
+Blinx.use(eventBind);
+Blinx.use(smartRender);
+Blinx.use(observer);
+
+import CounterCompositeModule from "./src/apps/counter/counterComposite/index";
+
+Blinx.createInstance({
+    "moduleName": "CounterCompositeModule",
+    "module": CounterCompositeModule,
+    "instanceConfig": {
+        "container": "#app-container",
+        "placeholders": {
+            initialCount: 10,
+            greeting: "Hola"
+        }
+    }
+});
+```
 
 
 
