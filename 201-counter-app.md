@@ -159,5 +159,9 @@ We will be using bind-ext to bind events through config. Let us got to counterCo
 }
 ```
 
+Here, we are binding click event on selector "button" and asking to call our callback method "updateCount" whenever click event happens. Also, we are asking the bind-extension to provide the value of data attribute type in to our callback function.
+
+
+
 
 
