@@ -161,5 +161,15 @@ We will be using bind-ext to bind events through config. Let us got to counterCo
 
 Here, we are binding click event on selector "button" and asking to call our callback method "updateCount" whenever click event happens. Also, we are asking the bind-extension to provide the value of data attribute type in to our callback function. So, basically our callback function will receive an object with type attribute and its value will be the value of data-type attribute on button.
 
-If you will observe updateCount method, there we are checking for op.type and operating based on the value.
+If you will observe updateCount method, there we are checking for op.type and operating based on the value. Let us change the template to have data-type attribute
+
+```
+<div>
+    <div class="count">{{initialCount}}</div>
+    <button class="inc" data-type="+">Increment</button>
+    <button class="dec" data-type="-">Decrement</button>
+</div>
+```
+
+
 
