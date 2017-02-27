@@ -124,7 +124,7 @@ function resolveRenderOn(){
 }
 
 function updateCount(op) {
-  if(op === "+"){
+  if(op.type === "+"){
     ++this._.initialCount;
   } else {
     --this._.initialCount;
