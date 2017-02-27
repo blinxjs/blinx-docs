@@ -26,9 +26,7 @@ Basically, module will be somewhat like:
 
 moduleObj = Object.assign\(moduleObj, providerObj\)
 
-
-
------------
+---
 
 Let us get back to counter application now. We will be using 3 providers in this application namely:
 
@@ -37,6 +35,14 @@ Let us get back to counter application now. We will be using 3 providers in this
 2. smart-render: This provider smartly differentiates between the two HTML blocks and figures out the changes which needs to be patched in DOM.
 
 3. observer: Adds \_ over the module context. Whenever any data changes over \_, it calls the dependent function mentioned in configuration.
+
+Get started and import these packages in our counter application. First we will need to install package for all these providers. All the three mentioned provider is part of blinx-extensions package. Go ahead and install that using npm
+
+```
+npm install blinx-extensions --save
+```
+
+
 
 
 
